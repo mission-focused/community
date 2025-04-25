@@ -1,0 +1,4 @@
+baseURL: https://missionfocused.dev/
+languageCode: en-us
+title: Misson Focused Development
+theme: ["PaperMod"]
