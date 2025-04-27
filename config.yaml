@@ -2,19 +2,6 @@ baseURL: https://missionfocused.dev/
 languageCode: en-us
 title: Misson Focused
 theme: ["PaperMod"]
-params:
-  homeInfoParams:
-    Title: "Mission Focused Development"
-    Content: >
-      👋 Welcome to the community focused on Software Delivery and Development focused on **The Mission**
-
-      - We believe that software should be built with a purpose, and that purpose should be to serve the mission of the organization.
-      
-      - We are a community of developers, engineers, and software delivery experts who are passionate about building software that makes a difference.
-
-      - Feel free to show your support by giving us a star 🌟 on GitHub and sharing with your friends and social media .
-
-      - Do you have content you would like to share? Create an Issue or follow the process outlined [here]() in order to get started.
 
 # copyright: "© [PaperMod Contributors](https://github.com/adityatelange/hugo-PaperMod/graphs/contributors)"
 
@@ -25,7 +12,7 @@ buildFuture: false
 buildExpired: false
 enableEmoji: true
 pygmentsUseClasses: true
-mainsections: ["posts", "papermod"]
+mainsections: ["posts", "airgap"]
 
 minify:
   disableXML: true
@@ -125,6 +112,18 @@ outputs:
     - JSON
 
 params:
+  homeInfoParams:
+    Title: "Mission Focused Development"
+    Content: >
+      👋 Welcome to the community focused on Software Delivery and Development focused on **The Mission**
+
+      - We believe that software should be built with a purpose, and that purpose should be to serve the mission of the organization.
+      
+      - We are a community of developers, engineers, and software delivery experts who are passionate about building software that makes a difference.
+
+      - Feel free to show your support by giving us a star 🌟 on GitHub and sharing with your friends and social media .
+
+      - Do you have content you would like to share? Create an Issue or follow the process outlined [here]() in order to get started.
   env: production # to enable google analytics, opengraph, twitter-cards and schema.
   description: "Theme PaperMod - https://github.com/adityatelange/hugo-PaperMod"
   author: Theme PaperMod
