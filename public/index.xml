@@ -15,5 +15,12 @@
       <guid>http://localhost:1313/posts/my-first-post/</guid>
       <description>&lt;p&gt;new content here&lt;/p&gt;</description>
     </item>
+    <item>
+      <title>My 1st post</title>
+      <link>http://localhost:1313/posts/test/</link>
+      <pubDate>Tue, 15 Sep 2020 11:30:03 +0000</pubDate>
+      <guid>http://localhost:1313/posts/test/</guid>
+      <description></description>
+    </item>
   </channel>
 </rss>
