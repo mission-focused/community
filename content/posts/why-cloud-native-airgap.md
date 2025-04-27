@@ -26,8 +26,8 @@ ShowRssButtonInSectionTermList: true
 UseHugoToc: true
 cover:
     image: "https://content.bekindchooseviolence.com/cloud-native-offline.png" # image path/url
-    alt: "<alt text>" # alt text
-    caption: "<text>" # display caption under cover
+    alt: "Cloud Native Offline" # alt text
+    caption: "Why Cloud Native needs to work offline" # display caption under cover
     relative: false # when using page bundles set this to true
     hidden: true # only hide on current single page
 editPost:
