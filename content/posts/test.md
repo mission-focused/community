@@ -35,3 +35,11 @@ editPost:
     Text: "Suggest Changes" # edit text
     appendFilePath: true # to append file path to Edit link
 ---
+
+Let's create some content 
+
+## sub title
+
+more content
+
+### sub-sub title
