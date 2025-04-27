@@ -3,12 +3,12 @@ title: 'Disconnected-by-Design: Rethinking Cloud Native Principles'
 date: '2025-04-15T13:00:00Z'
 # weight: 1
 # aliases: ["/first"]
-tags: ["Arigap", "Cloud-Native"]
+tags: ["Airgap", "Cloud-Native"]
 author: "Brandt Keller"
 # author: ["Me", "You"] # multiple authors
 showToc: true
 TocOpen: false
-draft: true
+draft: false
 hidemeta: false
 comments: false
 description: "Designing for disconnected"
@@ -35,6 +35,8 @@ editPost:
     Text: "Suggest Changes" # edit text
     appendFilePath: true # to append file path to Edit link
 ---
+
+![](https://content.bekindchooseviolence.com/disconnected-design.png)
 
 If you’ve ever worked in a disconnected environment - or even just a flaky one - you probably understand.
 

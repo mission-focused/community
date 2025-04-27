@@ -8,7 +8,7 @@ author: "Brandt Keller"
 # author: ["Me", "You"] # multiple authors
 showToc: true
 TocOpen: false
-draft: true
+draft: false
 hidemeta: false
 comments: false
 description: "Fully Disconnected to Controlled Connected"
@@ -35,6 +35,8 @@ editPost:
     Text: "Suggest Changes" # edit text
     appendFilePath: true # to append file path to Edit link
 ---
+
+![](https://content.bekindchooseviolence.com/airgap-spectrum.png)
 
 If you’ve heard the word *airgap* and thought “oh, that’s just for submarines,” you’re not wrong — but you’re also missing the bigger picture.
 
