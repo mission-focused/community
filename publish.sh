@@ -1,6 +1,6 @@
 #!/bin/bash
 
-echo "$CF_PAGES_BRANCH"
+echo "Publishing Branch: $CF_PAGES_BRANCH"
 
 if [ "$CF_PAGES_BRANCH" == "main" ]; then
   # Set baseurl to the production URL
