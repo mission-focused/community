@@ -8,7 +8,7 @@ author: "Brandt Keller"
 # author: ["Me", "You"] # multiple authors
 showToc: true
 TocOpen: false
-draft: true
+draft: false
 hidemeta: false
 comments: false
 description: "Why we need to be desigining cloud native applications to operate offline"
