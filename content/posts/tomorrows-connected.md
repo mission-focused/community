@@ -1,6 +1,6 @@
 ---
-title: 'The Airgap Spectrum: Fully Disconnected to Controlled Connected'
-date: '2025-04-19T13:00:00Z'
+title: 'Build for the Gap, Adapt for the Future'
+date: '2025-04-23T13:00:00Z'
 # weight: 1
 # aliases: ["/first"]
 tags: ["Airgap", "Cloud-Native"]
@@ -11,7 +11,7 @@ TocOpen: false
 draft: true
 hidemeta: false
 comments: false
-description: "Fully Disconnected to Controlled Connected"
+description: "Tomorrows Connected"
 canonicalURL: "https://canonical.url/to/page"
 disableHLJS: true # to disable highlightjs
 disableShare: false
@@ -25,8 +25,8 @@ ShowWordCount: true
 ShowRssButtonInSectionTermList: true
 UseHugoToc: true
 cover:
-    image: "https://content.bekindchooseviolence.com/airgap-spectrum.png" # image path/url
-    alt: "airgap spectrum" # alt text
+    image: "https://content.bekindchooseviolence.com/future-connectivity.png" # image path/url
+    alt: "Todays Disconnected, tomorrows connected" # alt text
     caption: "Fully Disconnected to Controlled Connected" # display caption under cover
     relative: false # when using page bundles set this to true
     hidden: true # only hide on current single page
@@ -36,83 +36,76 @@ editPost:
     appendFilePath: true # to append file path to Edit link
 ---
 
-![](https://content.bekindchooseviolence.com/airgap-spectrum.png)
+![](https://content.bekindchooseviolence.com/future-connectivity.png)
 
-If you’ve heard the word *airgap* and thought “oh, that’s just for submarines,” you’re not wrong — but you’re also missing the bigger picture.
+Airgapped systems are often treated as static, permanent, and immovable.
 
-Airgaps aren’t binary. It’s not either full-internet or total-isolation. This may seem counterintuitive to some... Airgap _feels_ pretty binary.
+They’re offline.  
+They’re hardened.  
+They’re not changing anytime soon.
 
-There’s a spectrum here — maybe not all functions or capabilities within your system are airgap-dendent. Understanding where your system lives on this spectrum is key to building something that doesn’t fall over the second a network hiccups.
+Until they do.
 
-## What is the airgap spectrum?
+More and more, we’re seeing environments that start as fully disconnected gradually gain controlled access to the outside world. A system that began life on a USB stick might later receive daily updates over a satellite link. A once fully isolated deployment might eventually support secure relay syncs or controlled egress through a policy gateway.
 
-Here’s how I usually explain it:
+The question is: will your architecture be ready for that shift?
 
-| Tier | Description |
-|------|-------------|
-| **Fully Disconnected** | No network access at all. No internet. No relay. Think submarines, remote outposts, satellites. |
-| **Semi-Connected** | Some form of intermittent access—maybe via a satellite, a physical data drop, or a controlled sync window. Think forward operating bases, offline-first drones, or even industrial SCADA systems. |
-| **Controlled Connected** | Internet access exists but is gated through policy, firewalls, or a limited egress path. Think SIPR/NIPR or compliance-heavy enclaves. |
-| **Online** | Full internet access. Normal CI/CD pipelines, SaaS services, live GitOps syncs. |
+## Design for isolation, evolve with confidence
 
-You might move across this spectrum throughout the day.  
-Or design a system that can **operate across the full range**, depending on where it's deployed.
+Here’s the mistake a lot of teams make: they assume that “offline” means “special case.” They build a minimal, crippled, or overly rigid airgap deployment and treat it like a temporary exception to their normal infrastructure.
 
-## Why does this matter?
+That works until the environment evolves.  
+Then you're left with a system that’s hard to extend and harder to trust.
 
-Because each tier changes the assumptions you can make.
+Instead, flip the model.
 
-In a *fully disconnected* system:
-- You must bundle everything ahead of time
-- You can’t rely on live telemetry or alerts
-- There’s no such thing as an emergency patch from the internet
+Design for **full disconnection** but allow for **adaptive layering** as connectivity improves.
 
-In a *controlled connected* system:
-- You might get read access to a registry—but only through a scan-and-approve process
-- Your Git repo might be mirrored across a firewall once per day
-- You may be able to pull metrics out—but only via manual export
+- Start with portable, artifact-driven deployments
+- Use declarative configuration and package-based delivery
+- Run local-first telemetry and control planes
+- Mirror Git, registries, and module sources
+- Include trust and integrity tooling from the start
 
-## You have to plan for the worst
+When the day comes that you have intermittent or controlled access to upstream services, you’ll have the **infrastructure and patterns already in place** to support it - securely and intentionally.
 
-If you build for “online” but deploy into “semi-connected,” you’re going to get burned.
+## The spectrum isn’t a constraint, it’s a trajectory
 
-But if you build for “fully disconnected,” your system will *still work* in every other tier.
+The Airgap Spectrum isn't just a set of profiles. It's a **path forward**.
 
-That’s the point.
+| Today                     | Tomorrow                 |
+|--------------------------|--------------------------|
+| Fully disconnected        | Semi-connected sync      |
+| Manual USB updates        | Automated relay drops    |
+| Static bundles            | Patchable artifact sets  |
+| No observability sharing  | Outbound sync relay      |
+| No source control access  | Git mirroring / commits  |
 
-Start with no assumptions — then add capabilities where you can.  
-Don’t start with full SaaS and try to claw your way back to self-reliant. That way lies broken deploys and a lot of guesswork.
+Each of these steps can be reached **without re-architecting the system** - but only if the system was designed with the spectrum in mind.
 
-I've lived this life - as have many others. There are assumptions about design and architecture that make or break how an application handles environments which may have different requirements or capabilities. 
+## Build once, support many states
 
-## Real-world examples
+We’re not just building for now. We’re building for the full lifecycle of these systems:
 
-- **A defense app** that runs on both SIPR (controlled) and a tactical kit (fully disconnected)
-- **A field-deployed AI pipeline** that syncs new models over a Starlink relay once a week
-- **A software demo** that works even if the expo WiFi fails (ask me how I know)
+- The disconnected cluster spinning up for a tactical mission
+- The semi-connected enclave getting an update once a week
+- The cloud-hosted dev environment using the exact same GitOps flow
+- The compliance-driven production zone with restricted egress
 
-In all of those, it’s the same stack — but built to scale across the spectrum.
+When you architect around airgap fundamentals — artifact portability, mirrored dependencies, local-first defaults — you unlock the ability to **scale up or down connectivity without breaking the model**.
+
+No rewrites. No fragile workarounds.  
+Just a consistent, flexible approach to delivering cloud native systems anywhere they need to go.
 
 ## Summary
 
-> The airgap spectrum isn’t about policy — it’s about operational reality.
+Connectivity is a moving target.
 
-Connectivity can vary by:
-- Region
-- Time
-- Approval
-- Mission
-- Physical infrastructure
+What’s disconnected today might be connected tomorrow.  
+What’s isolated now may be integrated later.
 
-But the software still has to work.
+Design for the worst — but don’t get stuck there.  
+Build systems that stand on their own, and **grow** when the environment allows it.
 
-So treat “connected” as a luxury, not a baseline.  
-And design like it might go away at any moment.
-
-Because sometimes… it will.
-
-## Want to go deeper?
-
-- Check out the [Zarf project](https://github.com/zarf-dev/zarf) for building packages that run across the spectrum
-- Join the `#zarf` channel in Kubernetes Slack
-- Or hit me up on socials to chat about the weirdest places you’ve deployed an app
+Start airgap-native.  
+Then scale into everything else.
