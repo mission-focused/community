@@ -32,12 +32,12 @@ languages:
       series: series
     menu:
       main:
-        - name: Archive
-          url: archives
-          weight: 5
-        - name: Search
-          url: search/
-          weight: 10
+        # - name: Archive
+        #   url: archives
+        #   weight: 5
+        # - name: Search
+        #   url: search/
+        #   weight: 10
         - name: Tags
           url: tags/
           weight: 10
@@ -115,9 +115,9 @@ params:
   homeInfoParams:
     Title: "Mission Focused Development"
     Content: >
-      👋 Welcome to the community focused on Software Delivery and Development focused on **The Mission**
+      👋 Welcome to the community - Software Delivery and Development focused on **The Mission**
 
-      - We believe that software should be built with a purpose, and that purpose should be to serve the mission of the organization.
+      - We believe that software should be built with a purpose, and that purpose should be to serve the mission of a greater purpose.
       
       - We are a community of developers, engineers, and software delivery experts who are passionate about building software that makes a difference.
 
