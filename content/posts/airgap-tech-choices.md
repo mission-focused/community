@@ -3,7 +3,7 @@ title: 'How Airgaps Shape Tech Choices'
 date: '2025-04-30T13:00:00Z'
 # weight: 1
 # aliases: ["/first"]
-tags: ["Airgap", "Cloud-Native"]
+tags: ["Airgap", "Cloud-Native", "Airgap-Chapter-2"]
 author: "Brandt Keller"
 # author: ["Me", "You"] # multiple authors
 showToc: true
@@ -35,6 +35,7 @@ editPost:
     Text: "Suggest Changes" # edit text
     appendFilePath: true # to append file path to Edit link
 ---
+![](https://content.bekindchooseviolence.com/airgap-tech-choices.png)
 
 When you operate in an airgapped or semi-connected environment, technology decisions stop being expansive. 
 

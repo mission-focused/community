@@ -3,7 +3,7 @@ title: 'The Airgap Spectrum: Fully Disconnected to Controlled Connected'
 date: '2025-04-17T13:00:00Z'
 # weight: 1
 # aliases: ["/first"]
-tags: ["Airgap", "Cloud-Native"]
+tags: ["Airgap", "Cloud-Native", "Airgap-Chapter-2"]
 author: "Brandt Keller"
 # author: ["Me", "You"] # multiple authors
 showToc: true
