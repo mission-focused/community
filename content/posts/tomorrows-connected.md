@@ -3,7 +3,7 @@ title: 'Build for the Gap, Adapt for the Future'
 date: '2025-04-23T13:00:00Z'
 # weight: 1
 # aliases: ["/first"]
-tags: ["Airgap", "Cloud-Native"]
+tags: ["Airgap", "Cloud-Native", "Airgap-Chapter-2"]
 author: "Brandt Keller"
 # author: ["Me", "You"] # multiple authors
 showToc: true

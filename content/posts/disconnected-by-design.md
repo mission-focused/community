@@ -3,7 +3,7 @@ title: 'Disconnected-by-Design: Rethinking Cloud Native Principles'
 date: '2025-04-15T13:00:00Z'
 # weight: 1
 # aliases: ["/first"]
-tags: ["Airgap", "Cloud-Native"]
+tags: ["Airgap", "Cloud-Native", "Airgap-Chapter-1"]
 author: "Brandt Keller"
 # author: ["Me", "You"] # multiple authors
 showToc: true

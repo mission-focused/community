@@ -3,7 +3,7 @@ title: 'Why Cloud Native Needs to Work Offline'
 date: '2025-04-11T13:00:00Z' #6am PT
 # weight: 1
 # aliases: ["/first"]
-tags: ["Airgap", "Cloud-Native"]
+tags: ["Airgap", "Cloud-Native", "Airgap-Chapter-1"]
 author: "Brandt Keller"
 # author: ["Me", "You"] # multiple authors
 showToc: true
