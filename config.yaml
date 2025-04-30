@@ -124,8 +124,8 @@ params:
 
       - Do you have content you would like to share? Create an Issue or follow the process outlined [here]() in order to get started.
   env: production # to enable google analytics, opengraph, twitter-cards and schema.
-  description: "Theme PaperMod - https://github.com/adityatelange/hugo-PaperMod"
-  author: Theme PaperMod
+  description: "Mission Focused Development"
+  author: Mission Focused Development
   # author: ["Me", "You"] # multiple authors
 
   defaultTheme: auto
@@ -142,7 +142,7 @@ params:
   ShowPageNums: true
   ShowToc: true
   # comments: false
-  images: ["images/papermod-cover.png"]
+  # images: ["images/papermod-cover.png"]
 
   profileMode:
     enabled: false
