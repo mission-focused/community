@@ -1,6 +1,6 @@
 ---
 title: 'Rethinking the Airgap: Understanding Disconnected and Semi-Connected Personas'
-date: '2025-05-05 T13:00:00Z'
+date: '2025-05-05T13:00:00Z'
 tags: ["Airgap", "Cloud-Native", "Airgap-Chapter-2"]
 author: "Brandt Keller"
 showToc: true
