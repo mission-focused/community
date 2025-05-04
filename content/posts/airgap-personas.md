@@ -1,6 +1,6 @@
 ---
 title: 'Rethinking the Airgap: Understanding Disconnected and Semi-Connected Personas'
-date: '2025-05-03T13:00:00Z'
+date: '2025-05-05T13:00:00Z'
 # weight: 1
 # aliases: ["/first"]
 tags: ["Airgap", "Cloud-Native", "Airgap-Chapter-2"]
@@ -11,7 +11,7 @@ TocOpen: false
 draft: true
 hidemeta: false
 comments: false
-description: "DAirgaps are not binary"
+description: "Airgaps are not binary"
 canonicalURL: "https://canonical.url/to/page"
 disableHLJS: true # to disable highlightjs
 disableShare: false

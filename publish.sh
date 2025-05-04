@@ -9,5 +9,5 @@ if [ "$CF_PAGES_BRANCH" == "main" ]; then
 else
   # Else set it to the expected dev url
   echo "Running the development preview publish"
-  hugo -b $CF_PAGES_URL --buildDrafts
+  hugo -b $CF_PAGES_URL --buildDrafts --buildFuture
 fi
