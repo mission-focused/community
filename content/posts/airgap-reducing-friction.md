@@ -8,7 +8,7 @@ author: "Brandt Keller"
 # author: ["Me", "You"] # multiple authors
 showToc: true
 TocOpen: false
-draft: true
+draft: false
 hidemeta: false
 comments: false
 description: "Reducing friction at the edge"
@@ -25,9 +25,9 @@ ShowWordCount: true
 ShowRssButtonInSectionTermList: true
 UseHugoToc: true
 cover:
-    image: "<image path/url>" # image path/url
-    alt: "<alt text>" # alt text
-    caption: "<text>" # display caption under cover
+    image: "https://content.bekindchooseviolence.com/airgap-friction-reduction.png" # image path/url
+    alt: "Reducing airgap friction" # alt text
+    caption: "Delivering Cloud Native Software to Disconnected Environments" # display caption under cover
     relative: false # when using page bundles set this to true
     hidden: true # only hide on current single page
 editPost:
@@ -36,7 +36,7 @@ editPost:
     appendFilePath: true # to append file path to Edit link
 ---
 
-![]()
+![](https://content.bekindchooseviolence.com/airgap-friction-reduction.png)
 
 We’ve talked about **personas**.  
 We’ve talked about **environments**.  
@@ -160,3 +160,9 @@ Because disconnection isn’t the exception anymore.
 It’s an emerging norm.
 
 And our software delivery workflows need to catch up.
+
+## Want to go deeper?
+
+- Check out the [Zarf project](https://github.com/zarf-dev/zarf) for building packages that run across the spectrum
+- Join the `#zarf` channel in Kubernetes Slack
+- Or hit me up on socials to chat about the weirdest places you’ve deployed an app
