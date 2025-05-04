@@ -1,0 +1,14 @@
+name: Daily Cloudflare Pages Rebuild
+
+on:
+  schedule:
+    - cron: '0 12 * * *'  # Runs at 5 AM Pacific Time (12 PM UTC)
+
+jobs:
+  trigger-rebuild:
+    runs-on: ubuntu-latest
+    if: github.ref == 'refs/heads/main'
+    steps:
+      - name: Trigger Cloudflare Pages Rebuild
+        run: |
+          curl -X POST ${{ secrets.CLOUDFLARE_DEPLOY_HOOK_URL }}
