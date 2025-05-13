@@ -1,6 +1,6 @@
 ---
 title: 'How Airgap Design Benefits Connected Systems'
-date: '2025-05-12T10:00:00Z'
+date: '2025-05-13T10:00:00Z'
 # weight: 1
 # aliases: ["/first"]
 tags: ["Airgap", "Cloud-Native", "Airgap-Chapter-3"]
@@ -11,7 +11,7 @@ TocOpen: false
 draft: true
 hidemeta: false
 comments: false
-description: "Desc Text."
+description: "Benefits of airgap-native design to connected systems"
 canonicalURL: "https://canonical.url/to/page"
 disableHLJS: true # to disable highlightjs
 disableShare: false
@@ -26,8 +26,8 @@ ShowRssButtonInSectionTermList: true
 UseHugoToc: true
 cover:
     image: "<image path/url>" # image path/url
-    alt: "<alt text>" # alt text
-    caption: "<text>" # display caption under cover
+    alt: "How Airgap Design Benefits Connected Systems" # alt text
+    caption: "Benefits of airgap-native design to connected systems" # display caption under cover
     relative: false # when using page bundles set this to true
     hidden: true # only hide on current single page
 editPost:
@@ -44,6 +44,14 @@ But here’s the catch:
 
 When you design for failure, restriction, and constraint — you build systems that are prepared for the reality of even the best - infrastructure, configuration and every detail between.
 
+You would be surprised at how often this catches a project off-guard - or maybe you wouldn't. I will say, there is a healthy spectrum of udnerstanding across even the CNCF landscape and the maintainers and contributors therein. Some have a good baseline knowledge - some are completely surprised that that you would want to use their project in the airgap. 
+
+When you ask "Will this project work in an airgapped environment?" they usually respond quickly - "ofcourse it will". 
+
+Then you clarify - have you tested all the features of your project in a mock-airgap environment? The answer is most often "no" and then the fun conversation happens.
+
+"Well actually this portion of the functionality relies on public infrastructure - and we've never tested to ensure it responds offline accordingly. 
+
 ## Cloud Assumptions Are Fragile
 
 Most cloud-native architectures implicitly assume:
@@ -54,7 +62,7 @@ Most cloud-native architectures implicitly assume:
 * Observability pipelines with external collectors.
 * CI/CD driven by hosted SaaS services.
 
-These work well - until they don't. 
+These work well - until they don't - and hey... we can't blame them. Often there is a need to establish boundaries around what your application does or does not do. The critical piece the follows is whether it can do its core function without connectivity...
 
 Outages happen. Networks degrade. Credentials expire. Supply chain links go stale. And when they do, fragile assumptions become operational risks.
 
@@ -74,6 +82,8 @@ In connected systems, this reduces:
 * Breakage when upstream repos go down.
 * Deployment drift from unintended version mismatches.
 
+Your supply chain only becomes stronger when we start to really combine all of the artifacts into a deterministic package. No separation of the runtime and the orchestration - everything require to run an application in a consistent format. 
+
 ### 2. **Explicit Supply Chains**
 
 Airgapped systems can’t rely on implicit trust. Every artifact needs a known provenance.
@@ -83,6 +93,8 @@ This benefits connected systems by:
 * Enabling better auditability and SBOM integration.
 * Making it easier to trace vulnerabilities across dependency chains.
 * Supporting compliance - driven deployment pipelines.
+
+We have been discussing shift-left and shift-down security for some time now. How do we start to embed some of these functions into the points of interest where they are most critical? 
 
 ### 3. **Decoupled Identity and Access**
 
@@ -114,6 +126,18 @@ In connected systems, this:
 * Enables faster disaster recovery and rehydration.
 * Makes blue-green or canary deployments more predictable.
 
+### 6. **Data Independence**
+
+There is no single source of truth for getting critical updates into these environments. Airgapped systems require data be independent from runtime such that it can be scrutinized and deployed repeatedly
+
+In connected systems, this:
+
+* Creates pathways for auditable data update procedures
+* Ensures you are not solely reliant on a public service
+* Establishes better interface practices for where data is derived and stored
+
+This enhances how we can audit and understand where data impacts runtime. Where data is the critical influencer of functionality we can reduce friction by providing automated and assisted processes to improve data workflows. 
+
 ## The Real World Is a Spectrum
 
 Few systems are 100% online or offline. Most sit somewhere in between:
@@ -137,6 +161,7 @@ It forces you to:
 * Package your intentions.
 * Design for recovery without intervention.
 * Treat every part of the system as if it might fail.
+* Treat data as an influencer of runtime - rather than a baked-in assumption.
 
 That’s not just useful for submarines or space missions.
 It’s how you build robust systems — anywhere.
