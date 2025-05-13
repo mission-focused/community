@@ -8,7 +8,7 @@ author: "Brandt Keller"
 # author: ["Me", "You"] # multiple authors
 showToc: true
 TocOpen: false
-draft: true
+draft: false
 hidemeta: false
 comments: false
 description: "Benefits of airgap-native design to connected systems"
@@ -25,7 +25,7 @@ ShowWordCount: true
 ShowRssButtonInSectionTermList: true
 UseHugoToc: true
 cover:
-    image: "<image path/url>" # image path/url
+    image: "https://content.bekindchooseviolence.com/disconnected-benefits.png" # image path/url
     alt: "How Airgap Design Benefits Connected Systems" # alt text
     caption: "Benefits of airgap-native design to connected systems" # display caption under cover
     relative: false # when using page bundles set this to true
@@ -35,6 +35,7 @@ editPost:
     Text: "Suggest Changes" # edit text
     appendFilePath: true # to append file path to Edit link
 ---
+![](https://content.bekindchooseviolence.com/disconnected-benefits.png)
 
 Designing for disconnected environments can seem like a niche concern — something only relevant for the extreme of specialty use-cases.
 
